@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"/>
+    <title>Reservia-header</title>
+  </head>
+
+  <body>
+
+		<!--Mon en tête espace navigation-->
+      <!--hearder-->
+  <header class="header">
+    <img class="logohaut" src="./img/reservia_logo.svg" alt="Reservia">
+    <nav class="headerNav">
+      <a class="headerNavBar" href="#" data-active="true" >Hébergement</a> 
+      <a class="headerNavBar" href="#" data-active="false" >Activités</a> <!--data active permet de montré ma bordure nav uniquement au survol-->
+    </nav>
+    <a class="headerInscrire" href="#">S'inscrire</a>
+  </header>
+  <!-- HEADER -->
+
+  <!-- MAIN -->
+  <main class="main"> <!--contenu majoritaire du body-->
+    <!-- espace recherche -->
+    <section class="search">
+      <header class="searchHeader">
+        <h1 class="searchHeaderTitre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="searchHeaderSoutitre">En plein centre de ville ou en pleine nature</p>
+      </header>
+      <form class="searchForm" action="recherche"> <!--action permet d'etre diriger sur une page avec php-->
+        <span class="searchFormicon"> <!--span élement de ligne-->
+          <i class="fas fa-map-marker-alt searchFormiconIcon "></i>
+        </span>
+        <input class="RechercheForminput" type="search" placeholder="Marseille, France" size="1">
+        <button class="BarSubmitinput">
+          <span class="BarSubmitinputText">Rechercher</span>
+          <i class="RechercheSubmitinputIcon fas fa-search"></i>
+        </button> <!--fin du menu recherche-->
+      </form>
+
+      <div class="searchFilter"> <!--espace filtre-->
+          <h2 class="searchFilterTitre">Filtres</h2>
+      <div class="searchFilter">
+          <div class="searchFilterIcon">
+      <i class="fas fa-money-bill-wave searchFilterIcon1"></i>  <!--icon éco-->
+         </div>
+      <span class="searchTitreFilter">Économique>
+         </span>
+
+        <div class="searchFilter">
+            <Div class="searchFilterIcon">
+        <i class="fas fa-child searchFilterIcon1"></i> <!--icon familial-->
+            </Div>
+        <span class="searchTitreFilter">Familial>
+            </span>
+        </div>
+
+      <div class="searchFilter">
+            <Div class="searchFilterIcon">
+        <i class="fas fa-heart searchFilterIcon1"></i> <!--icon Romantique-->
+            </Div>
+        <span class="searchTitreFilter">Romantique>
+            </span>
+        </div>
+
+      <div class="searchFilter">
+            <Div class="searchFilterIcon">
+        <i class="fas fa-dog searchFilterIcon1"></i> <!--icon chien-->
+            </Div>
+        <span class="searchTitreFilter">Animaux autorisés>
+            </span>
+           </div>
+      </div>
+      <div class="searchInformation">
+            <div class="searchInformationIcon"> <i class="fas fa-info searchInformationIcon2"></i>
+      <p class="SearchInformationText"> Plus de 500 logements disponibles dans cette ville</p>
+          </div>
+      </div>
+	</section>
+    
+</body>
+</html>
